@@ -1,0 +1,21 @@
+RecoverAI smoke test: PASS
+
+Checks:
+- synthetic dataset >= 500 rows
+- held-out ROC-AUC > 0.60
+- batch size = 80
+- audit log = 80 decisions
+- each decision includes action + reasoning
+- at least one bounded stop/escalation case exists
+
+Current reproducible demo metrics (synthetic data):
+- ROC-AUC: 0.771
+- Precision: 0.422
+- Recall: 0.628
+- Synthetic batch: 80
+- Attempted actions: 42
+- Stopped/escalated: 38
+- Recovered count (simulated): 30
+- Recovered amount (simulated): INR 300,943.38
+- Baseline amount (simulated): INR 278,396.80
+- Incremental amount (simulated): INR 22,546.58
